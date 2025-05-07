@@ -33,7 +33,6 @@ Configurar una red interna entre dos máquinas virtuales en VirtualBox utilizand
 ## Paso 3: Asignar IPs estáticas (no persistentes)
 
 ### En máquina A:
-</br>
 ![Imagen6](./Imagenes/6ConexionA.png)
 ![Imagen7](./Imagenes/7rootA.png)
 
@@ -51,7 +50,7 @@ sudo ip link set enp0s8 up
 sudo ip addr add 192.168.100.3/24 dev enp0s8
 sudo ip link set enp0s8 up
 ```
-![Imagen11](./Imagenes/11terceraIPB.png)
+![Imagen11](./Imagenes/11TerceraIPB.png)
 
 ---
 
@@ -116,7 +115,7 @@ nmcli con add type ethernet ifname enp0s8 con-name intnet-b ip4 192.168.100.3/24
 ```bash
 nmcli con up intnet-b
 ```
-![Imagen19](./Imagenes/19ActivosConexion.png)
+![Imagen19](./Imagenes/19ActivamosConexion.png)
 3. Verificar:
 ```bash
 ip addr show enp0s8
