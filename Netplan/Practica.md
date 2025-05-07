@@ -25,25 +25,31 @@ Configurar una red interna entre dos máquinas virtuales en VirtualBox utilizand
   - Modo: **Red Interna**
   - Nombre: `intnet`
 
-📸 _Inserta aquí imagen de la configuración del adaptador_
+![Imagen4](./Imagenes/4adaptador2deA.png)
+![Imagen5](./Imagenes/5adaptador2deB.png)
 
 ---
 
 ## Paso 3: Asignar IPs estáticas (no persistentes)
 
 ### En máquina A:
+![Imagen6](./Imagenes/6ConexionA.png)
+![Imagen7](./Imagenes/7rootA.png)
+
 ```bash
 sudo ip addr add 192.168.100.2/24 dev enp0s8
 sudo ip link set enp0s8 up
 ```
+![Imagen10](./Imagenes/10segundaIPA.png)
 
 ### En máquina B:
+![Imagen8](./Imagenes/8conexionB.png)
+![Imagen9](./Imagenes/9rootB.png)
 ```bash
 sudo ip addr add 192.168.100.3/24 dev enp0s8
 sudo ip link set enp0s8 up
 ```
-
-📸 _Inserta capturas de la asignación de IPs_
+![Imagen11](./Imagenes/11terceraIPB.png)
 
 ---
 
@@ -53,13 +59,13 @@ Desde `maquinaA`:
 ```bash
 ping 192.168.100.3
 ```
+![Imagen12](./Imagenes/12PingDesdeA.png)
 
 Desde `maquinaB`:
 ```bash
 ping 192.168.100.2
 ```
-
-📸 _Insertar imagen mostrando la respuesta de ping_
+![Imagen13](./Imagenes/13PingDesdeB.png)
 
 ---
 
@@ -71,7 +77,7 @@ ping 192.168.100.2
 ```bash
 sudo nano /etc/netplan/01-netcfg.yaml
 ```
-
+![Imagen14](./Imagenes/14NetplanEdicionFichero.png)
 2. Contenido del archivo:
 ```yaml
 network:
@@ -82,7 +88,7 @@ network:
         - 192.168.100.2/24
       dhcp4: no
 ```
-
+![Imagen15](./Imagenes/15EscrituraFicheroNetplan.png)
 3. Ajustar permisos:
 ```bash
 sudo chmod 600 /etc/netplan/01-netcfg.yaml
@@ -92,8 +98,8 @@ sudo chmod 600 /etc/netplan/01-netcfg.yaml
 ```bash
 sudo netplan apply
 ```
-
-📸 _Insertar imagen de archivo YAML y ejecución de `netplan apply`_
+![Imagen16](./Imagenes/16RestriccionPermisosNetplanYAplicamos.png)
+![Imagen17](./Imagenes/17ComprobacionIpA.png)
 
 ---
 
@@ -103,19 +109,17 @@ sudo netplan apply
 ```bash
 nmcli con add type ethernet ifname enp0s8 con-name intnet-b ip4 192.168.100.3/24
 ```
-
+![Imagen18](./Imagenes/18CreamosConexionB.png)
 2. Activar conexión:
 ```bash
 nmcli con up intnet-b
 ```
-
+![Imagen19](./Imagenes/19ActivosConexion.png)
 3. Verificar:
 ```bash
 ip addr show enp0s8
 ```
-
-📸 _Insertar imagen del comando `nmcli` y resultado_
-
+![Imagen20](./Imagenes/20Comprobamos.png)
 ---
 
 ##  Verificación final
@@ -123,7 +127,7 @@ ip addr show enp0s8
 - Ambas máquinas tienen IP estática correctamente configurada.
 - Se pueden hacer ping entre sí incluso después de reiniciar.
 
-📸 _Insertar captura de verificación final_
+![Imagen21](./Imagenes/21hacemosPingHaciaA.png)
 
 ---
 
