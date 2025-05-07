@@ -13,8 +13,9 @@ Configurar una red interna entre dos máquinas virtuales en VirtualBox utilizand
 - Clonamos dos veces usando la opción de **clonado enlazado** y activamos la casilla **reinicializar direcciones MAC**.
 - Nombramos las máquinas como `maquinaA` y `maquinaB`.
 
-📸 _Inserta aquí la imagen de la clonación_
-
+![Imagen1](./Imagenes/1ClonacionA.png)
+![Imagen2](./Imagenes/3ClonacionB.png)
+![Imagen3](./Imagenes/2clonacionEnlaceA.png)
 ---
 
 ## Paso 2: Configurar adaptadores de red
