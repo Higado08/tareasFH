@@ -23,7 +23,7 @@ Configurar una red interna entre dos máquinas virtuales en VirtualBox utilizand
 - En VirtualBox → Configuración de cada máquina:
   - Activamos el **Adaptador 2**.
   - Modo: **Red Interna**
-  - Nombre: `intnet`
+  - Nombre: `intnet_FH`
 
 ![Imagen4](./Imagenes/4adaptador2deA.png)
 ![Imagen5](./Imagenes/5adaptador2deB.png)
@@ -33,6 +33,7 @@ Configurar una red interna entre dos máquinas virtuales en VirtualBox utilizand
 ## Paso 3: Asignar IPs estáticas (no persistentes)
 
 ### En máquina A:
+</br>
 ![Imagen6](./Imagenes/6ConexionA.png)
 ![Imagen7](./Imagenes/7rootA.png)
 
