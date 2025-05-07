@@ -40,10 +40,10 @@ Configurar una red interna entre dos máquinas virtuales en VirtualBox utilizand
 sudo ip addr add 192.168.100.2/24 dev enp0s8
 sudo ip link set enp0s8 up
 ```
-![Imagen10](./Imagenes/10segundaIPA.png)
+![Imagen10](./Imagenes/10SegundaIPA.png)
 
 ### En máquina B:
-![Imagen8](./Imagenes/8conexionB.png)
+![Imagen8](./Imagenes/8ConexionB.png)
 </br>
 ![Imagen9](./Imagenes/9rootB.png)
 ```bash
