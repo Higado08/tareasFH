@@ -50,7 +50,7 @@ sudo ip link set enp0s8 up
 sudo ip addr add 192.168.100.3/24 dev enp0s8
 sudo ip link set enp0s8 up
 ```
-![Imagen11](./Imagenes/11TerceraIPB.png)
+![Imagen11](./Imagenes/11TerceraIpB.png)
 
 ---
 
