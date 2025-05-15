@@ -70,7 +70,7 @@
 - Añadir la imagen `.iso` de Kali Linux como unidad óptica.
 - En `Configuración > Sistema > Orden de arranque`, colocar la unidad óptica antes que el disco duro.
 
-📸 *[Añadir captura de la configuración en VirtualBox]*
+![imagen21](./Imagenes/21DiscoKali.png)
 
 ---
 
