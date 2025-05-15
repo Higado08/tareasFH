@@ -184,7 +184,7 @@ Ejemplo: Creacion de archivo de texto en el directorio personal:
 ```bash
 echo Hugo estuvo aqui > /home/hugo/prueba.txt
 ```
-![imagen36](./Imagenes/36Chroot.png)
+![imagen36](./Imagenes/36chroot.png)
 
 #### 4.9 Desmontar los directorios utilizados
 
