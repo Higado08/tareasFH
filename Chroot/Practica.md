@@ -59,7 +59,7 @@
 
 ![imagen19](./Imagenes/19instalacion.png)
 
-![imagen20](./Imagenes/20instalacionCompletada.png)
+![imagen20](./Imagenes/20InstalacionCompletada.png)
 
 ---
 
