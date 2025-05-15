@@ -21,7 +21,7 @@
   - Nombre de usuario: hugo
   - Contraseña: (la que elijas) en este caso utilizaremos "abc123."
 
-![imagen1](/imagenes/1creacionmaquina)
+![imagen1](./imagenes/1creacionmaquina)
 
 ---
 
