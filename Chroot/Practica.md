@@ -129,7 +129,7 @@ mount
 fdisk -l /dev/sda
 ```
 
- *[Añadir captura de la partición `/dev/sda1`]*
+![imagen31](./Imagenes/31sda.png)
 
 ---
 
@@ -138,6 +138,7 @@ fdisk -l /dev/sda
 ```bash
 mkdir /mnt/recuperar
 ```
+![imagen32](./Imagenes/32recuperar.png)
 
 ---
 
@@ -147,70 +148,51 @@ mkdir /mnt/recuperar
 mount -t auto /dev/sda1 /mnt/recuperar
 lsblk -f
 ```
+![imagen33](./Imagenes/33mount.png)
 
- *[Añadir captura de `lsblk` mostrando el montaje]*
+![imagen34](./Imagenes/34Comprobacionmontaje.png)
 
 ---
 
-#### 4.7 Montar `/dev` dentro de la ruta montada
+#### 4.7 Montar `/dev` `/proc` `/sys` dentro de la ruta montada
 
 ```bash
 mount --bind /dev /mnt/recuperar/dev
 ```
-
----
-
-#### 4.8 Montar `/proc` dentro de la ruta montada
-
 ```bash
 mount --bind /proc /mnt/recuperar/proc
 ```
-
----
-
-#### 4.9 Montar `/sys` dentro de la ruta montada
-
 ```bash
 mount --bind /sys /mnt/recuperar/sys
 ```
+![imagen35](./Imagenes/35MontajeDPS.png)
 
 ---
 
-#### 4.10 Crear una jaula con `chroot`
+#### 4.8 Crear una jaula con `chroot`
 
 ```bash
 chroot /mnt/recuperar
 ```
-
 Una vez dentro de la jaula:
 - Estás trabajando directamente sobre el sistema Debian instalado.
 - Puedes realizar tareas administrativas como cambiar contraseñas.
+- Puedes realizar tareas varias como la creacion y edicion de archivos
 
-Ejemplo: cambiar la contraseña del usuario `hugo`:
-
-```bash
-passwd hugo
-```
-
- Para demostrar que estuviste en la jaula:
+Ejemplo: Creacion de archivo de texto en el directorio personal:
 
 ```bash
-mkdir /home/hugo/estuve_aqui
-echo "Hugo estuvo aquí " > /home/hugo/prueba.txt
+echo Hugo estuvo aqui > /home/hugo/prueba.txt
 ```
+![imagen36](./Imagenes/36Chroot.png)
 
-📸 *[Añadir captura de los archivos creados dentro del chroot]*
-
----
-
-#### 4.11 Desmontar los directorios utilizados
+#### 4.9 Desmontar los directorios utilizados
 
 Salir de la jaula:
 
 ```bash
 exit
 ```
-
 Desmontar todo:
 
 ```bash
@@ -219,8 +201,7 @@ umount /mnt/recuperar/proc
 umount /mnt/recuperar/sys
 umount /mnt/recuperar
 ```
-
-📸 *[Añadir captura del desmontaje correcto]*
+![imagen37](./Imagenes/36umount.png)
 
 ---
 
@@ -231,6 +212,7 @@ umount /mnt/recuperar
 ```bash
 poweroff
 ```
+![imagen38](./Imagenes/37apagar.png)
 
 - Quitar la ISO de Kali Linux desde la configuración de almacenamiento de VirtualBox.
 - Reiniciar la VM.
@@ -241,8 +223,9 @@ poweroff
 ls /home/hugo
 cat /home/hugo/prueba.txt
 ```
+![imagen39](./Imagenes/38debian.png)
 
- *[Añadir captura de los archivos dentro del sistema Debian]*
+![imagen40](./Imagenes/39Comprobacionexistencia.png)
 
 ---
 
