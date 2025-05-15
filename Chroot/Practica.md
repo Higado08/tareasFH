@@ -99,6 +99,7 @@
 ```bash
 loadkeys es
 ```
+![imagen27](./Imagenes/27CambioTeclado.png)
 
 ---
 
@@ -107,6 +108,7 @@ loadkeys es
 ```bash
 sudo su
 ```
+![imagen28](./Imagenes/28Root.png)
 
 ---
 
@@ -115,6 +117,9 @@ sudo su
 ```bash
 mount
 ```
+![imagen29](./Imagenes/29Mount.png)
+
+![imagen30](./Imagenes/30Mount.png)
 
 ---
 
