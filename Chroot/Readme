@@ -1,1 +1,4 @@
-
+Descripcion da tarea
+En esta práctica se utiliza una distribución Live (Kali Linux) para montar el sistema de archivos de una instalación de Debian mediante el comando chroot. 
+El objetivo es acceder al entorno del sistema instalado desde una máquina externa, como si se estuviera ejecutando normalmente, permitiendo así realizar tareas de recuperación,
+administración o mantenimiento del sistema, como cambiar contraseñas o modificar archivos de configuración.
