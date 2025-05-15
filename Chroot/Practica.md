@@ -23,6 +23,44 @@
 
 ![imagen1](./Imagenes/1creacionmaquina.png)
 
+![imagen2](./Imagenes/2creacionmaquina.png)
+
+![imagen3](./Imagenes/3creacionmaquina.png)
+
+![imagen4](./Imagenes/4creacionmaquina.png)
+
+![imagen5](./Imagenes/5instalaciondebian.png)
+
+![imagen6](./Imagenes/6instalacion.png)
+
+![imagen7](./Imagenes/7instalacion.png)
+
+![imagen8](./Imagenes/8instalacion.png)
+
+![imagen9](./Imagenes/9instalacion.png)
+
+![imagen10](./Imagenes/10instalacion.png)
+
+![imagen11](./Imagenes/11instalacion.png)
+
+![imagen12](./Imagenes/12instalacion.png)
+
+![imagen13](./Imagenes/13instalacion.png)
+
+![imagen14](./Imagenes/14instalacion.png)
+
+![imagen15](./Imagenes/15instalacion.png)
+
+![imagen16](./Imagenes/16instalacion.png)
+
+![imagen17](./Imagenes/17instalacion.png)
+
+![imagen18](./Imagenes/18instalacion.png)
+
+![imagen19](./Imagenes/19instalacion.png)
+
+![imagen20](./Imagenes/20instalacionCompletada.png)
+
 ---
 
 ### 2. Configurar VirtualBox con la ISO de Kali Linux
