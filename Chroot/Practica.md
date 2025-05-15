@@ -72,6 +72,12 @@
 
 ![imagen21](./Imagenes/21DiscoKali.png)
 
+![imagen22](./Imagenes/22discoKali.png)
+
+![imagen23](./Imagenes/23discoKali.png)
+
+![imagen24](./Imagenes/24discoKali.png)
+
 ---
 
 ### 3. Arrancar la máquina virtual desde Kali Linux Live
