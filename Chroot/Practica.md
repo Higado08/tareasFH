@@ -86,7 +86,9 @@
 - Kali Linux debería cargar como sistema Live.
 - Abrir una terminal para realizar los pasos siguientes.
 
-📸 *[Añadir captura de Kali Live en ejecución]*
+![imagen25](./Imagenes/25Kali.png)
+
+![imagen26](./Imagenes/26Kali.png)
 
 ---
 
